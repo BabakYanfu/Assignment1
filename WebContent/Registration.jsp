@@ -6,7 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Registration</title>
 <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-<script language="JavaScript" src="resources/js/lib/jquery-2.2.0.min.js"></script>
+<link rel="stylesheet" type="text/css"
+	href="resources/js/lib/jquery/jquery-ui-1.11.4/jquery-ui.min.css">
+<script language="JavaScript"
+	src="resources/js/lib/jquery/jquery-1.12.0.min.js"></script>
+<script language="JavaScript"
+	src="resources/js/lib/jquery/jquery-ui-1.11.4/jquery-ui.min.js"></script>
 <script language="JavaScript" src="resources/js/app.js"></script>
 <script language="JavaScript" src="resources/js/validate.js"></script>
 </head>
@@ -15,10 +20,7 @@
 		<div id="notice"></div>
 		<div class="header"></div>
 	</center>
-	<div class="aside">
-		<div id="slogan">Discover a hotel that defines a new dimension
-			of luxury. Your success is our highest calling!</div>
-	</div>
+	<div class="aside"></div>
 	<form name="register" action="Registration" method="get">
 		<div class="main">
 			<div id="panel">
