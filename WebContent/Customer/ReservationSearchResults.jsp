@@ -7,7 +7,7 @@
 <title>Results</title>
 <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
 <link rel="stylesheet" type="text/css"
-	href="../resources/css/results.css">
+	href="../resources/css/customer/results.css">
 <link rel="stylesheet" type="text/css"
 	href="../resources/js/lib/jquery/jquery-ui-1.11.4/jquery-ui.min.css">
 <script language="JavaScript"

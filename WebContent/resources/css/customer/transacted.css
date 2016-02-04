@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+
+.extent {
+	overflow: hidden;
+}
+
+.extent input[type=button] {
+	margin-top: 12px;
+}
+
+table {
+	width: 90%;
+	border-collapse: collapse;
+	font-family: Arial;
+	font-size: small;
+}
+
+th {
+	height: 22px;
+	background-color: rgba(255, 204, 0, 1.0);
+	color: rgba(0, 0, 0, 1.0);
+}
+
+/*th:nth-child(5) {
+	padding-left: -10px;
+	text-align: center;
+}
+
+th:nth-child(6) {
+	padding-left: -10px;
+	text-align: center;
+}
+
+td:nth-child(5) {
+	text-align: center;
+}*/
+th, td {
+	padding-left: 10px;
+	border-bottom: 1px solid rgba(166, 166, 166, 1.0);
+}
+
+/*tr:nth-child(even) {
+	background-color: rgba(203, 203, 203, 1.0);
+}*/
+#paidrecord tr:nth-child(1) {
+	height: 22px;
+}
+
+#paidrecord tr {
+	height: 29px;
+}

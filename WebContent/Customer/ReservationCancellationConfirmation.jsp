@@ -8,6 +8,8 @@
 <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
 <link rel="stylesheet" type="text/css"
 	href="../resources/js/lib/jquery/jquery-ui-1.11.4/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css"
+	href="../resources/css/customer/cancelled.css">
 <script language="JavaScript"
 	src="../resources/js/lib/jquery/jquery-1.12.0.min.js"></script>
 <script language="JavaScript"
@@ -22,8 +24,37 @@
 	<div class="aside"></div>
 	<form name="login" action="Login" method="post">
 		<div class="main">
-			<div class="extent">This is Reservation Cancellation
-				Confirmation Page!</div>
+			<div class="extent">
+				<input type="button" value="Home" id="home"
+					onclick="location.href='CustomerHomePage.jsp';">
+				<center>
+					<h1>Your reservation has been cancelled!</h1>
+				</center>
+				<center>
+					<table id="cancelledrecord">
+						<tr>
+							<th align="left">Attribute1</th>
+							<th align="left">Attribute2</th>
+							<th align="left">Attribute3</th>
+							<th align="left">Attribute4</th>
+							<th align="left">Attribute5</th>
+							<th align="left">Status</th>
+							<th align="left">Credit Card Account</th>
+							<th align="left">Refunds</th>
+						</tr>
+						<tr>
+							<td>value1</td>
+							<td>value2</td>
+							<td>value3</td>
+							<td>value4</td>
+							<td>value5</td>
+							<td>cancelled</td>
+							<td>0000-0000-0000-0000</td>
+							<td>$100</td>
+						</tr>
+					</table>
+				</center>
+			</div>
 		</div>
 	</form>
 	<center>

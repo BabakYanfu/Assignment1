@@ -1,0 +1,66 @@
+@CHARSET "UTF-8";
+
+#current {
+	width: 90%;
+	border-collapse: collapse;
+	font-family: Arial;
+	font-size: small;
+}
+
+#previous {
+	width: 80%;
+	border-collapse: collapse;
+	font-family: Arial;
+	font-size: small;
+}
+
+table input[type=button] {
+	font-family: Arial;
+	font-size: small;
+}
+
+th {
+	height: 22px;
+	background-color: rgba(255, 204, 0, 1.0);
+	color: rgba(0, 0, 0, 1.0);
+}
+
+/*
+th:nth-child(5) {
+	padding-left: -10px;
+	text-align: center;
+}
+
+th:nth-child(6) {
+	padding-left: -10px;
+	text-align: center;
+}
+
+td:nth-child(5) {
+	text-align: center;
+}
+*/
+td:nth-child(8) {
+	text-align: right;
+}
+
+th, td {
+	padding-left: 10px;
+	border-bottom: 1px solid rgba(166, 166, 166, 1.0);
+}
+
+tr:nth-child(even) {
+	background-color: rgba(203, 203, 203, 1.0);
+}
+
+#home {
+	margin-top: 12px;
+}
+
+#previous tr:nth-child(1) {
+	height: 22px;
+}
+
+#previous tr {
+	height: 29px;
+}

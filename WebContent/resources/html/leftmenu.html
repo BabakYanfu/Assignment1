@@ -1,0 +1,67 @@
+<style type="text/css">
+.ui-menu {
+	width: 180px;
+	position: absolute;
+	left: 40px;
+	top: 240px;
+	opacity: 1.0;
+}
+</style>
+<script type="text/javascript">
+	$(function() {
+		$("#menu").menu();
+	});
+</script>
+<ul id="menu">
+	<li><img src="../resources/img/icons/map-marker-xxl.png"
+		class="icons">Map</li>
+	<li><img src="../resources/img/icons/white-beer-256.png"
+		class="icons">Parties</li>
+	<li><img src="../resources/img/icons/car-4-xxl.png" class="icons">Rent
+		a car
+		<ul>
+			<li>Alamo</li>
+			<!-- for disable set "class="ui-state-disabled"" for <li> -->
+			<li>Enterprise</li>
+			<li>Fox</li>
+			<li>Hertz</li>
+			<li>National</li>
+			<li>Thrifty</li>
+		</ul></li>
+	<li><img
+		src="../resources/img/icons/white-airplane-takeoff-256.png"
+		class="icons">Book a flight
+		<ul>
+			<li>American Airlines</li>
+			<li>Delta Airlines</li>
+			<li>United Airlines</li>
+		</ul></li>
+	<li><img src="../resources/img/icons/icon_6564a.png" class="icons">Restaurants
+		<ul>
+			<li>Dining hall</li>
+			<li>Barbecue
+				<ul>
+					<li>Jack Stack BBQ</li>
+					<li>Outback Steakhouse</li>
+				</ul>
+			</li>
+			<li>Buffet
+				<ul>
+					<li>Golden Corral</li>
+					<li>Mongolian Grill</li>
+					<li>Valentino's</li>
+				</ul>
+			</li>
+			<li>Chinese foods
+				<ul>
+					<li>Imperial Palace</li>
+					<li>Panda Express</li>
+				</ul>
+			</li>
+		</ul></li>
+	<li onclick="location.href='ManageReservations.jsp';"><img
+		src="../resources/img/icons/home-icon.png" class="icons">Manage
+		Reservations</li>
+	<li><img src="../resources/img/icons/Calendar-Date-04.png"
+		class="icons">Calendar</li>
+</ul>

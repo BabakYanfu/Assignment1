@@ -8,15 +8,8 @@
 <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
 <link rel="stylesheet" type="text/css"
 	href="../resources/js/lib/jquery/jquery-ui-1.11.4/jquery-ui.min.css">
-<style type="text/css">
-.extent input[type=button] {
-	margin-top: 12px;
-}
-
-#select {
-	float: right;
-}
-</style>
+<link rel="stylesheet" type="text/css"
+	href="../resources/css/customer/viewbook.css">
 <script language="JavaScript"
 	src="../resources/js/lib/jquery/jquery-1.12.0.min.js"></script>
 <script language="JavaScript"
@@ -40,6 +33,20 @@
 					onclick="location.href='ReservationTransaction.jsp';">
 				<center>
 					<h1>Hotel Details</h1>
+				</center>
+				<h2>Confirm number of rooms</h2>
+				<center>
+					<p>Number of rooms:</p>
+					<select>
+						<option value="one">one</option>
+						<option value="two">two</option>
+						<option value="three">three</option>
+						<option value="four">four</option>
+						<option value="five">five</option>
+					</select>
+					<p style="font-size: small; color: rgba(83, 83, 83, 1.0);">*Note:
+						If reserve more than 5 rooms, please contact our manager through
+						the customer service, please call at (000)000-0000.</p>
 				</center>
 				<h2>I. About</h2>
 				<center>

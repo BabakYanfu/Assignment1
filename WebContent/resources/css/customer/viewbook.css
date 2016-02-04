@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+#select {
+	float: right;
+}
+
+.extent input[type=button] {
+	margin-top: 12px;
+}
+
+select {
+	width: 52px;
+	text-align: center;
+}
