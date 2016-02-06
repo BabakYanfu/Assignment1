@@ -57,6 +57,13 @@
 					</tr>
 				</table>
 			</center>
+			<center>
+				<h1>Reservation number: 12345</h1>
+				<div id="qrcode">
+					<img alt="" src="../resources/img/demo/QR/qrblog_large.png"
+						width="100%" height="100%">
+				</div>
+			</center>
 		</div>
 	</div>
 	<center>

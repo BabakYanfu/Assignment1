@@ -67,6 +67,8 @@
 				</center>
 				<center>
 					<input type="button" value="Register" onClick="validate(this.form)">
+					<input type="button" value="Back" id="back2login"
+						onclick="location.href='Login.jsp';">
 				</center>
 			</div>
 		</div>

@@ -117,42 +117,44 @@
 						</select></td>
 					</tr>
 					<tr>
-						<td></td>
-						<td><input type="checkbox" name="bathtub"
-							value="Bathtub in room" checked>Bathtub in room</td>
+						<td align="right"><input type="checkbox" name="bathtub"
+							value="Bathtub in room" checked></td>
+						<td>Bathtub in room</td>
 					</tr>
 					<tr>
-						<td></td>
-						<td><input type="checkbox" name="breakfast"
-							value="Free breakfast" checked>Free breakfast</td>
+						<td align="right"><input type="checkbox" name="breakfast"
+							value="Free breakfast" checked></td>
+						<td>Free breakfast</td>
 					</tr>
 					<tr>
-						<td></td>
-						<td><input type="checkbox" name="wifi" value="Free Wi-Fi"
-							checked>Free Wi-Fi</td>
+						<td align="right"><input type="checkbox" name="wifi"
+							value="Free Wi-Fi" checked></td>
+						<td>Free Wi-Fi</td>
 					</tr>
 					<tr>
-						<td></td>
-						<td><input type="checkbox" name="internet"
-							value="Paid Internet access">Paid Internet access</td>
+						<td align="right"><input type="checkbox" name="internet"
+							value="Paid Internet access"></td>
+						<td>Paid Internet access</td>
 					</tr>
 					<tr>
-						<td></td>
-						<td><input type="checkbox" name="gym" value="Gym">Gym</td>
+						<td align="right"><input type="checkbox" name="gym"
+							value="Gym"></td>
+						<td>Gym</td>
 					</tr>
 					<tr>
-						<td></td>
-						<td><input type="checkbox" name="pool" value="Pool">Pool</td>
+						<td align="right"><input type="checkbox" name="pool"
+							value="Pool"></td>
+						<td>Pool</td>
 					</tr>
 					<tr>
-						<td></td>
-						<td><input type="checkbox" name="smoke" value="smoke">No
-							smoke</td>
+						<td align="right"><input type="checkbox" name="smoke"
+							value="smoke"></td>
+						<td>No smoke</td>
 					</tr>
 					<tr>
-						<td></td>
-						<td><input type="checkbox" name="pet" value="Pet friendly">Pet
-							friendly</td>
+						<td align="right"><input type="checkbox" name="pet"
+							value="Pet friendly"></td>
+						<td>Pet friendly</td>
 					</tr>
 				</table>
 			</center>

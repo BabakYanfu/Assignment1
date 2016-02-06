@@ -76,4 +76,10 @@ window.onload = function() {
 			$("#checkout").datepicker();
 		});
 	}
+	if (document.getElementById("cardnumber")) {
+		document.getElementById("cardnumber").placeholder = "xxxx xxxx xxxx xxxx";
+	}
+	if (document.getElementById("expirdate")) {
+		document.getElementById("expirdate").placeholder = "MM/YY";
+	}
 }

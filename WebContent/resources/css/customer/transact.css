@@ -8,10 +8,6 @@
 	margin-top: 12px;
 }
 
-#confirmreservation {
-	float: right;
-}
-
 #reservation {
 	width: 90%;
 	border-collapse: collapse;
@@ -25,7 +21,12 @@ th {
 	color: rgba(0, 0, 0, 1.0);
 }
 
-#reservation th, td {
+#reservation th {
+	text-align: center;
+	border-bottom: 1px solid rgba(166, 166, 166, 1.0);
+}
+
+#reservation td {
 	text-align: center;
 	border-bottom: 1px solid rgba(166, 166, 166, 1.0);
 }
@@ -44,4 +45,20 @@ th {
 
 #payhere td {
 	border: 0px;
+}
+
+#cardnumber {
+	text-align: center;
+}
+
+#securcode {
+	width: 28px;
+	margin-left: 2px;
+	text-align: center;
+}
+
+#expirdate {
+	width: 50px;
+	margin-left: 2px;
+	text-align: center;
 }

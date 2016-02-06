@@ -25,9 +25,7 @@
 	<div class="main">
 		<div class="extent">
 			<input type="button" value="Cancel" id="cancel"
-				onclick="location.href='ReservationSearchResults.jsp';"> <input
-				type="button" value="Confirm Reservation" id="confirmreservation"
-				onclick="location.href='ReservationTransactionConfirmation.jsp';">
+				onclick="location.href='ReservationSearchResults.jsp';">
 			<center>
 				<h1>Reservation</h1>
 				<table id="reservation">
@@ -67,16 +65,16 @@
 						<tr>
 							<td align="right">Card number:</td>
 							<td><input type="text" name="cardnumber" id="cardnumber"></td>
+							<td align="right">Security code:</td>
+							<td><input type="text" name="securcode" id="securcode"></td>
+						</tr>
+						<tr>
 							<td align="right">Card type:</td>
 							<td><select>
 									<option value="Discover">Discover</option>
 									<option value="Visa">Visa</option>
 									<option value="Master">Master</option>
 							</select></td>
-						</tr>
-						<tr>
-							<td align="right">Security code:</td>
-							<td><input type="text" name="securcode" id="securcode"></td>
 							<td align="right">Expiration date:</td>
 							<td><input type="text" name="expirdate" id="expirdate"></td>
 						</tr>
@@ -85,6 +83,11 @@
 							<td><input type="text" name="billaddress" id="billaddress"></td>
 						</tr>
 					</table>
+				</center>
+				<center>
+					<input type="button" value="Confirm Reservation"
+						id="confirmreservation"
+						onclick="location.href='ReservationTransactionConfirmation.jsp';">
 				</center>
 			</center>
 		</div>
