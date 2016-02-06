@@ -76,12 +76,12 @@ public class Login extends HttpServlet {
 
 		if (user.validateClient(user, clientspath) == true) {
 
-			System.out.println("This is a client!");
+			System.out.println("User exists in clients");
 			response.sendRedirect("Client/ClientHomePage.jsp");
 
 		} else if (user.validateUser(user, userspath) == 1) {
 
-			System.out.println("User exists");
+			System.out.println("User exists in users");
 			response.sendRedirect("Customer/CustomerHomePage.jsp");
 
 		} else if (user.validateUser(user, userspath) == -1) {

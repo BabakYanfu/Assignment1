@@ -15,7 +15,10 @@ import model.Users;
  */
 public class Registration extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
+
+	private String up = "/WEB-INF/users.properties";
+	private String cp = "/WEB-INF/clients.properties";
+
 	private long modTime;
 
 	/**
@@ -26,34 +29,49 @@ public class Registration extends HttpServlet {
 		// Round to nearest second (i.e., 1000 milliseconds)
 		modTime = System.currentTimeMillis() / 1000 * 1000;
 	}
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public Registration() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public Registration() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		
+
 		ServletContext sc = this.getServletContext();
-		/* Store the user.properties file in the WEB-INF directory.
-		   Relative path is converted into the absolute path. */
-		String path = sc.getRealPath("/WEB-INF/users.properties");
-		
+		/*
+		 * Store the user.properties file in the WEB-INF directory. Relative
+		 * path is converted into the absolute path.
+		 */
+		String userspath = sc.getRealPath(up);
+		String clientspath = sc.getRealPath(cp);
+
 		Users user = new Users(username, password);
-		user.addUser(user, path);
-		
+
+		// Prevent a user accidentally overwrites all properties when at this
+		// step
+		if (user.validateClient(user, clientspath) == true || user.validateUser(user, userspath) == 1) {
+
+			System.out.println("User exists either in users or clients");
+
+		} else {
+
+			user.addUser(user, userspath);
+		}
+
 		response.sendRedirect("Login.jsp");
 	}
-	
+
 	/**
 	 * The standard service method compares this date against any date specified
 	 * in the If-Modified-Since request header. If the getLastModified date is
@@ -69,9 +87,11 @@ public class Registration extends HttpServlet {
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
