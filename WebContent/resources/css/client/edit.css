@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+.extent input[type=button] {
+	margin-top: 12px;
+}
+
+#cancel {
+	float: right;
+}

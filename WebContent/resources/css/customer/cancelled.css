@@ -9,7 +9,7 @@
 }
 
 table {
-	width: 90%;
+	width: 100%;
 	border-collapse: collapse;
 	font-family: Arial;
 	font-size: small;
@@ -21,27 +21,11 @@ th {
 	color: rgba(0, 0, 0, 1.0);
 }
 
-/*th:nth-child(5) {
-	padding-left: -10px;
-	text-align: center;
-}
-
-th:nth-child(6) {
-	padding-left: -10px;
-	text-align: center;
-}
-
-td:nth-child(5) {
-	text-align: center;
-}*/
 th, td {
-	padding-left: 10px;
+	text-align: center;
 	border-bottom: 1px solid rgba(166, 166, 166, 1.0);
 }
 
-/*tr:nth-child(even) {
-	background-color: rgba(203, 203, 203, 1.0);
-}*/
 #cancelledrecord tr:nth-child(1) {
 	height: 22px;
 }

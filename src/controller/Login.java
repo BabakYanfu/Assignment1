@@ -1,7 +1,6 @@
 package controller;
 
 import java.io.IOException;
-
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -15,8 +14,14 @@ import model.Users;
  */
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
+
+	private String up = "/WEB-INF/users.properties";
+	private String cp = "/WEB-INF/clients.properties";
+
 	private long modTime;
+
+	// Client credentials
+	private String clients[][] = { { "Babak", "12345678" }, { "Yanfu", "87654321" }, { "root", "00000000" } };
 
 	/**
 	 * The init method is called only when the servlet is first loaded, before
@@ -25,48 +30,72 @@ public class Login extends HttpServlet {
 	public void init() throws ServletException {
 		// Round to nearest second (i.e., 1000 milliseconds)
 		modTime = System.currentTimeMillis() / 1000 * 1000;
+
+		// initialize clients properties
+		ServletContext sc = this.getServletContext();
+		/*
+		 * Store the clients.properties file in the WEB-INF directory. Relative
+		 * path is converted into the absolute path.
+		 */
+		String path = sc.getRealPath(cp);
+
+		Users user = new Users(null, null);
+
+		for (int i = 0; i < clients.length; i++) {
+			user.addClient(clients[i], path);
+		}
 	}
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public Login() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+	public Login() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		
+
 		ServletContext sc = this.getServletContext();
-		/* Store the user.properties file in the WEB-INF directory.
-		   Relative path is converted into the absolute path. */
-		String path = sc.getRealPath("/WEB-INF/users.properties");
-		
+		/*
+		 * Store the user.properties file in the WEB-INF directory. Relative
+		 * path is converted into the absolute path.
+		 */
+		String userspath = sc.getRealPath(up);
+		String clientspath = sc.getRealPath(cp);
+
 		Users user = new Users(username, password);
-		
-		if (user.validateUser(user, path) == 1) {
-			
+
+		if (user.validateClient(user, clientspath) == true) {
+
+			System.out.println("This is a client!");
+			response.sendRedirect("Client/ClientHomePage.jsp");
+
+		} else if (user.validateUser(user, userspath) == 1) {
+
 			System.out.println("User exists");
 			response.sendRedirect("Customer/CustomerHomePage.jsp");
-			
-		} else if (user.validateUser(user, path) == -1) {
-			
+
+		} else if (user.validateUser(user, userspath) == -1) {
+
 			System.out.println("Password is wrong!");
 			response.sendRedirect("Login.jsp");
-			
+
 		} else {
-			
+
 			System.out.println("User not exists!");
 			response.sendRedirect("Registration.jsp");
 		}
 	}
-	
+
 	/**
 	 * The standard service method compares this date against any date specified
 	 * in the If-Modified-Since request header. If the getLastModified date is
@@ -82,9 +111,11 @@ public class Login extends HttpServlet {
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}

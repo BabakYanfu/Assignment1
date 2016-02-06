@@ -7,7 +7,11 @@ table {
 	font-size: small;
 }
 
-.extent input[type=button] {
+#home {
+	margin-top: 12px;
+}
+
+#hotels input[type=button] {
 	font-family: Arial;
 	font-size: small;
 }

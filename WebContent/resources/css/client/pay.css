@@ -8,7 +8,11 @@
 	margin-top: 12px;
 }
 
-table {
+#createreservation {
+	float: right;
+}
+
+#reservation {
 	width: 90%;
 	border-collapse: collapse;
 	font-family: Arial;
@@ -21,24 +25,23 @@ th {
 	color: rgba(0, 0, 0, 1.0);
 }
 
-td:nth-child(5) {
-	padding-left: 56px;
-}
-
-th, td {
-	padding-left: 10px;
+#reservation th, td {
+	text-align: center;
 	border-bottom: 1px solid rgba(166, 166, 166, 1.0);
 }
 
-#paidrecord tr:nth-child(1) {
+#reservation tr:nth-child(1) {
 	height: 22px;
 }
 
-#paidrecord tr {
+#reservation tr {
 	height: 29px;
 }
 
-#qrcode {
-	width: 150px;
-	height: 150px;
+#payhere {
+	width: 580px;
+}
+
+#payhere td {
+	border: 0px;
 }

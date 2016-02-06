@@ -1,0 +1,40 @@
+<style type="text/css">
+#menu {
+	width: 238px;
+}
+
+.ui-menu {
+	width: 70px;
+	position: absolute;
+	left: 0px;
+	top: 240px;
+	opacity: 0.9;
+}
+</style>
+<script type="text/javascript">
+	$(function() {
+		$("#menu").menu();
+	});
+</script>
+<ul id="menu">
+	<li><img src="../resources/img/icons/combo-256.png" class="icons">Finances
+		<ul>
+			<!-- for disable set "class="ui-state-disabled"" for <li> -->
+			<li>Budget</li>
+			<li>Profits</li>
+			<li>Tax</li>
+		</ul></li>
+	<li><img src="../resources/img/icons/Community_Icon.png"
+		class="icons">Client Information</li>
+	<li onclick="location.href='ManageHotels.jsp';"><img
+		src="../resources/img/icons/home-icon.png" class="icons">Manage
+		Hotels</li>
+	<li onclick="location.href='ViewCurrentReservations.jsp';"><img
+		src="../resources/img/icons/white-activity-feed-256.png" class="icons">View
+		Current Reservations</li>
+	<li onclick="location.href='ClientCreateReservation.jsp';"><img
+		src="../resources/img/icons/check-mark-xxl.png" class="icons">Create
+		Reservations</li>
+	<li><img src="../resources/img/icons/Calendar-Date-04.png"
+		class="icons">Calendar</li>
+</ul>

@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+extent {
+	overflow: hidden;
+}
+
+#home {
+	margin-top: 12px;
+}

@@ -62,12 +62,6 @@ body, html {
 	z-index: 15;
 }
 
-#menu {
-	width: 198px;
-	position: absolute;
-	z-index: 15;
-}
-
 .icons {
 	width: 11px;
 	height: 11px;
@@ -85,6 +79,11 @@ body, html {
 	left: 0px;
 	z-index: 5;
 	border-right: 2px solid rgba(0, 0, 0, 1);
+}
+
+#menu {
+	position: absolute;
+	z-index: 15;
 }
 
 #slogan {
@@ -139,31 +138,6 @@ body, html {
 	overflow-y: scroll;
 }
 
-.hotelphoto {
-	width: 320px;
-	height: 198px;
-	margin-left: 12px;
-	margin-bottom: 12px;
-	background-color: rgba(166, 166, 166, 1.0);
-	border: 1px solid rgba(0, 0, 0, 1.0);
-	float: right;
-}
-
-.photogroup {
-	width: 100%;
-	text-align: center;
-}
-
-.roomphoto {
-	width: 300px;
-	height: 185px;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-bottom: 20px;
-	background-color: rgba(166, 166, 166, 1.0);
-	border: 1px solid rgba(0, 0, 0, 1.0);
-}
-
 table {
 	cellspacing: 5;
 	border: 0;
@@ -214,6 +188,11 @@ input:focus {
 	outline: none;
 	color: rgba(0, 0, 0, 0.8);
 	background-color: rgba(255, 204, 0, 1.0);
+}
+
+textarea {
+	border: 1px solid rgba(153, 153, 153, 1.0);
+	border-radius: 3px;
 }
 
 .footer {

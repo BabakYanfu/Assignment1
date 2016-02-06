@@ -12,7 +12,7 @@
 	float: right;
 }
 
-table {
+#reservation {
 	width: 90%;
 	border-collapse: collapse;
 	font-family: Arial;
@@ -25,31 +25,23 @@ th {
 	color: rgba(0, 0, 0, 1.0);
 }
 
-/*th:nth-child(5) {
-	padding-left: -10px;
+#reservation th, td {
 	text-align: center;
-}
-
-th:nth-child(6) {
-	padding-left: -10px;
-	text-align: center;
-}
-
-td:nth-child(5) {
-	text-align: center;
-}*/
-th, td {
-	padding-left: 10px;
 	border-bottom: 1px solid rgba(166, 166, 166, 1.0);
 }
 
-/*tr:nth-child(even) {
-	background-color: rgba(203, 203, 203, 1.0);
-}*/
 #reservation tr:nth-child(1) {
 	height: 22px;
 }
 
 #reservation tr {
 	height: 29px;
+}
+
+#payhere {
+	width: 580px;
+}
+
+#payhere td {
+	border: 0px;
 }

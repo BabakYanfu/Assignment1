@@ -22,46 +22,73 @@
 		<div class="header"></div>
 	</center>
 	<div class="aside"></div>
-	<form name="login" action="Login" method="post">
-		<div class="main">
-			<div class="extent">
-				<input type="button" value="Cancel" id="cancel"
-					onclick="location.href='ReservationSearchResults.jsp';"> <input
-					type="button" value="Confirm Reservation" id="confirmreservation"
-					onclick="location.href='ReservationTransactionConfirmation.jsp';">
+	<div class="main">
+		<div class="extent">
+			<input type="button" value="Cancel" id="cancel"
+				onclick="location.href='ReservationSearchResults.jsp';"> <input
+				type="button" value="Confirm Reservation" id="confirmreservation"
+				onclick="location.href='ReservationTransactionConfirmation.jsp';">
+			<center>
+				<h1>Reservation</h1>
+				<table id="reservation">
+					<tr>
+						<th align="left">Hotel name</th>
+						<th align="left">Address</th>
+						<th align="left">Check In</th>
+						<th align="left">Check Out</th>
+						<th align="left">Number of rooms</th>
+						<th align="left">Room type</th>
+						<th align="left">Amenities</th>
+						<th align="left">Price/Night</th>
+						<th align="left">Total Cost</th>
+					</tr>
+					<tr>
+						<td>Grand Hotel</td>
+						<td>Lincoln, NE</td>
+						<td>02/02/2016</td>
+						<td>02/04/2016</td>
+						<td>1</td>
+						<td>Standard</td>
+						<td>Free Wifi, Smoke free</td>
+						<td>$80.00</td>
+						<td>$160.00</td>
+					</tr>
+				</table>
+				<br>
+				<h1>Pay Here</h1>
 				<center>
-					<h1>Pay Here</h1>
-					<!-- HTML inserted by Babak start here -->
-
-					<!-- HTML inserted by Babak end here -->
-					<br><br>
-					<h2>Reservation</h2>
-					<table id="reservation">
+					<table id="payhere">
 						<tr>
-							<th align="left">Attribute1</th>
-							<th align="left">Attribute2</th>
-							<th align="left">Attribute3</th>
-							<th align="left">Attribute4</th>
-							<th align="left">Attribute5</th>
-							<th align="left">Attribute6</th>
-							<th align="left">Attribute7</th>
-							<th align="left">Attribute8</th>
+							<td align="right">First name:</td>
+							<td><input type="text" name="firstname" id="firstname"></td>
+							<td align="right">Last name:</td>
+							<td><input type="text" name="lastName" id="lastName"></td>
 						</tr>
 						<tr>
-							<td>value1</td>
-							<td>value2</td>
-							<td>value3</td>
-							<td>value4</td>
-							<td>value5</td>
-							<td>value6</td>
-							<td>value7</td>
-							<td>value8</td>
+							<td align="right">Card number:</td>
+							<td><input type="text" name="cardnumber" id="cardnumber"></td>
+							<td align="right">Card type:</td>
+							<td><select>
+									<option value="Discover">Discover</option>
+									<option value="Visa">Visa</option>
+									<option value="Master">Master</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td align="right">Security code:</td>
+							<td><input type="text" name="securcode" id="securcode"></td>
+							<td align="right">Expiration date:</td>
+							<td><input type="text" name="expirdate" id="expirdate"></td>
+						</tr>
+						<tr>
+							<td align="right">Billing address:</td>
+							<td><input type="text" name="billaddress" id="billaddress"></td>
 						</tr>
 					</table>
 				</center>
-			</div>
+			</center>
 		</div>
-	</form>
+	</div>
 	<center>
 		<div class="footer"></div>
 	</center>

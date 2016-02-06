@@ -7,10 +7,10 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class Users {
-	
+
 	private String username;
 	private String password;
-	
+
 	public Users(String username, String password) {
 		this.username = username;
 		this.password = password;
@@ -20,74 +20,74 @@ public class Users {
 	public String getUserName() {
 		return username;
 	}
-	
+
 	public void setUserName(String username) {
 		this.username = username;
 	}
-	
+
 	public String getPassword() {
 		return password;
 	}
-	
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 	// addUser()
 	public void addUser(Users user, String path) {
-		
+
 		Properties p = new Properties();
 
 		FileInputStream fis = null;
 
 		try {
 
-		    fis = new FileInputStream(path);
+			fis = new FileInputStream(path);
 
-		    p.load(fis);
+			p.load(fis);
 
-		    p.setProperty(username, password);
+			p.setProperty(username, password);
 
-		    p.store(new FileOutputStream(path), null);
+			p.store(new FileOutputStream(path), null);
 
 		} catch (FileNotFoundException e) {
 
-		    System.out.println("FileNotFound");
+			System.out.println("FileNotFound");
 
 		} catch (IOException e) {
 
-		    System.out.println("IOEXCeption");
+			System.out.println("IOEXCeption");
 
 		} finally {
 
-		    if (fis != null) {
-               try {
-		            fis.close();
-		        } catch (Exception e) {
-                    e.printStackTrace();
-		        }
-		    }
+			if (fis != null) {
+				try {
+					fis.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
 		}
 	}
-	
+
 	// validateUser()
-	public int validateUser(Users user, String path) {	
-		
+	public int validateUser(Users user, String path) {
+
 		int status = 0;
-		
+
 		Properties p = new Properties();
 
 		FileInputStream fis = null;
 
 		try {
 
-		    fis = new FileInputStream(path);
+			fis = new FileInputStream(path);
 
-		    p.load(fis);
-		    String pass = p.getProperty(username);  
+			p.load(fis);
+			String pass = p.getProperty(username);
 
-			if(pass != null) {
-				if(pass.equals(password)) {
+			if (pass != null) {
+				if (pass.equals(password)) {
 					status = 1;
 				} else {
 					status = -1;
@@ -95,30 +95,113 @@ public class Users {
 			} else {
 				status = 0;
 			}
-   
+
 		} catch (FileNotFoundException e) {
 
-		    System.out.println("FileNotFound");
+			System.out.println("FileNotFound");
 
 		} catch (IOException e) {
 
-		    System.out.println("IOEXCeption");
+			System.out.println("IOEXCeption");
 
 		} finally {
 
-		    if (fis != null) {
-		        try {
-		            fis.close();
-		        }
-		        catch (Exception e) {
+			if (fis != null) {
+				try {
+					fis.close();
+				} catch (Exception e) {
 
-		            e.printStackTrace();
-		        }
-		    }
+					e.printStackTrace();
+				}
+			}
 		}
-		
+
 		return status;
 	}
-	
+
 	// removeUser()
+
+	// addClient()
+	public void addClient(String[] clients, String path) {
+
+		Properties p = new Properties();
+
+		FileInputStream fis = null;
+
+		try {
+
+			fis = new FileInputStream(path);
+
+			p.load(fis);
+
+			p.setProperty(clients[0], clients[1]);
+
+			p.store(new FileOutputStream(path), null);
+
+		} catch (FileNotFoundException e) {
+
+			System.out.println("FileNotFound");
+
+		} catch (IOException e) {
+
+			System.out.println("IOEXCeption");
+
+		} finally {
+
+			if (fis != null) {
+				try {
+					fis.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+
+	// validateClient()
+	public boolean validateClient(Users user, String path) {
+
+		Properties p = new Properties();
+
+		FileInputStream fis = null;
+
+		try {
+
+			fis = new FileInputStream(path);
+
+			p.load(fis);
+			String pass = p.getProperty(username);
+
+			if (pass != null) {
+				if (pass.equals(password)) {
+					return true;
+				} else {
+					return false;
+				}
+			} else {
+				return false;
+			}
+
+		} catch (FileNotFoundException e) {
+
+			System.out.println("FileNotFound");
+
+		} catch (IOException e) {
+
+			System.out.println("IOEXCeption");
+
+		} finally {
+
+			if (fis != null) {
+				try {
+					fis.close();
+				} catch (Exception e) {
+
+					e.printStackTrace();
+				}
+			}
+		}
+
+		return false;
+	}
 }

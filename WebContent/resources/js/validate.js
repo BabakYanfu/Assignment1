@@ -15,6 +15,7 @@ var warn = [ "*Warn: ", "Please fill in a user name! ",
 		"Please fill a valid email address! " ];
 
 function validate(form) {
+	getblur(form);
 	var username = document.getElementById("username");
 	var password = document.getElementById("password");
 	var notice = document.getElementById("notice");

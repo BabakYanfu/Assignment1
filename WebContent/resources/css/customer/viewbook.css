@@ -1,5 +1,30 @@
 @CHARSET "UTF-8";
 
+.hotelphoto {
+	width: 320px;
+	height: 198px;
+	margin-left: 12px;
+	margin-bottom: 12px;
+	background-color: rgba(166, 166, 166, 1.0);
+	border: 1px solid rgba(0, 0, 0, 1.0);
+	float: right;
+}
+
+.photogroup {
+	width: 100%;
+	text-align: center;
+}
+
+.roomphoto {
+	width: 300px;
+	height: 185px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	background-color: rgba(166, 166, 166, 1.0);
+	border: 1px solid rgba(0, 0, 0, 1.0);
+}
+
 #select {
 	float: right;
 }

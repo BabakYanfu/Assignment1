@@ -22,354 +22,352 @@
 		<div class="header"></div>
 	</center>
 	<div class="aside"></div>
-	<form name="login" action="Login" method="post">
-		<div class="main">
-			<div class="extent">
-				<center>
-					<h1>Search Results</h1>
-				</center>
-				<center>
-					<table>
-						<tr>
-							<th align="left">Name</th>
-							<th align="left">Address</th>
-							<th align="left">Description</th>
-							<th align="left">Room type</th>
-							<th align="left">Rank</th>
-							<th align="left">Price</th>
-							<th align="left">Amenities</th>
-							<th align="left"></th>
-						</tr>
-						<tr>
-							<td>X hotel</td>
-							<td>2000 X Street</td>
-							<td>Abilities or he perfectly pretended so strangers be
-								exquisite. Oh to another chamber pleased imagine do in. Went me
-								rank at last loud shot an draw.</td>
-							<td>type1</td>
-							<td>1</td>
-							<td>$100/day</td>
-							<td>Bathroom</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XX hotel</td>
-							<td>4000 XX Street</td>
-							<td>Excellent so to no sincerity smallness. Removal request
-								delight if on he we. Unaffected in we by apartments astonished
-								to decisively themselves. Offended ten old consider speaking.</td>
-							<td>type1, type2</td>
-							<td>2</td>
-							<td>$200/day</td>
-							<td>Bathroom, Breakfast</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXX hotel</td>
-							<td>6000 XXX Street</td>
-							<td>Exquisite cordially mr happiness of neglected distrusts.
-								Boisterous impossible unaffected he me everything. Is fine loud
-								deal an rent open give.</td>
-							<td>type1, type2, type3</td>
-							<td>3</td>
-							<td>$300/day</td>
-							<td>Bathroom, Breakfast, Wifi</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXXX hotel</td>
-							<td>8000 XXXX Street</td>
-							<td>On it differed repeated wandered required in. Then girl
-								neat why yet knew rose spot. Moreover property we he kindness
-								greatest be oh striking laughter.</td>
-							<td>type1, type2, type3, type4</td>
-							<td>4</td>
-							<td>$400/day</td>
-							<td>Bathroom, Breakfast, Wifi, Gym</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXXXX hotel</td>
-							<td>10000 XXXXX Street</td>
-							<td>In me he at collecting affronting principles apartments.
-								Has visitor law attacks pretend you calling own excited painted.
-								Contented attending smallness it oh ye unwilling.</td>
-							<td>type1, type2, type3, type4, type5</td>
-							<td>5</td>
-							<td>$500/day</td>
-							<td>Bathroom, Breakfast, Wifi, Gym, Pool</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>X hotel</td>
-							<td>2000 X Street</td>
-							<td>Abilities or he perfectly pretended so strangers be
-								exquisite. Oh to another chamber pleased imagine do in. Went me
-								rank at last loud shot an draw.</td>
-							<td>type1</td>
-							<td>1</td>
-							<td>$100/day</td>
-							<td>Bathroom</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XX hotel</td>
-							<td>4000 XX Street</td>
-							<td>Excellent so to no sincerity smallness. Removal request
-								delight if on he we. Unaffected in we by apartments astonished
-								to decisively themselves. Offended ten old consider speaking.</td>
-							<td>type1, type2</td>
-							<td>2</td>
-							<td>$200/day</td>
-							<td>Bathroom, Breakfast</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXX hotel</td>
-							<td>6000 XXX Street</td>
-							<td>Exquisite cordially mr happiness of neglected distrusts.
-								Boisterous impossible unaffected he me everything. Is fine loud
-								deal an rent open give.</td>
-							<td>type1, type2, type3</td>
-							<td>3</td>
-							<td>$300/day</td>
-							<td>Bathroom, Breakfast, Wifi</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXXX hotel</td>
-							<td>8000 XXXX Street</td>
-							<td>On it differed repeated wandered required in. Then girl
-								neat why yet knew rose spot. Moreover property we he kindness
-								greatest be oh striking laughter.</td>
-							<td>type1, type2, type3, type4</td>
-							<td>4</td>
-							<td>$400/day</td>
-							<td>Bathroom, Breakfast, Wifi, Gym</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXXXX hotel</td>
-							<td>10000 XXXXX Street</td>
-							<td>In me he at collecting affronting principles apartments.
-								Has visitor law attacks pretend you calling own excited painted.
-								Contented attending smallness it oh ye unwilling.</td>
-							<td>type1, type2, type3, type4, type5</td>
-							<td>5</td>
-							<td>$500/day</td>
-							<td>Bathroom, Breakfast, Wifi, Gym, Pool</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>X hotel</td>
-							<td>2000 X Street</td>
-							<td>Abilities or he perfectly pretended so strangers be
-								exquisite. Oh to another chamber pleased imagine do in. Went me
-								rank at last loud shot an draw.</td>
-							<td>type1</td>
-							<td>1</td>
-							<td>$100/day</td>
-							<td>Bathroom</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XX hotel</td>
-							<td>4000 XX Street</td>
-							<td>Excellent so to no sincerity smallness. Removal request
-								delight if on he we. Unaffected in we by apartments astonished
-								to decisively themselves. Offended ten old consider speaking.</td>
-							<td>type1, type2</td>
-							<td>2</td>
-							<td>$200/day</td>
-							<td>Bathroom, Breakfast</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXX hotel</td>
-							<td>6000 XXX Street</td>
-							<td>Exquisite cordially mr happiness of neglected distrusts.
-								Boisterous impossible unaffected he me everything. Is fine loud
-								deal an rent open give.</td>
-							<td>type1, type2, type3</td>
-							<td>3</td>
-							<td>$300/day</td>
-							<td>Bathroom, Breakfast, Wifi</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXXX hotel</td>
-							<td>8000 XXXX Street</td>
-							<td>On it differed repeated wandered required in. Then girl
-								neat why yet knew rose spot. Moreover property we he kindness
-								greatest be oh striking laughter.</td>
-							<td>type1, type2, type3, type4</td>
-							<td>4</td>
-							<td>$400/day</td>
-							<td>Bathroom, Breakfast, Wifi, Gym</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXXXX hotel</td>
-							<td>10000 XXXXX Street</td>
-							<td>In me he at collecting affronting principles apartments.
-								Has visitor law attacks pretend you calling own excited painted.
-								Contented attending smallness it oh ye unwilling.</td>
-							<td>type1, type2, type3, type4, type5</td>
-							<td>5</td>
-							<td>$500/day</td>
-							<td>Bathroom, Breakfast, Wifi, Gym, Pool</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>X hotel</td>
-							<td>2000 X Street</td>
-							<td>Abilities or he perfectly pretended so strangers be
-								exquisite. Oh to another chamber pleased imagine do in. Went me
-								rank at last loud shot an draw.</td>
-							<td>type1</td>
-							<td>1</td>
-							<td>$100/day</td>
-							<td>Bathroom</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XX hotel</td>
-							<td>4000 XX Street</td>
-							<td>Excellent so to no sincerity smallness. Removal request
-								delight if on he we. Unaffected in we by apartments astonished
-								to decisively themselves. Offended ten old consider speaking.</td>
-							<td>type1, type2</td>
-							<td>2</td>
-							<td>$200/day</td>
-							<td>Bathroom, Breakfast</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXX hotel</td>
-							<td>6000 XXX Street</td>
-							<td>Exquisite cordially mr happiness of neglected distrusts.
-								Boisterous impossible unaffected he me everything. Is fine loud
-								deal an rent open give.</td>
-							<td>type1, type2, type3</td>
-							<td>3</td>
-							<td>$300/day</td>
-							<td>Bathroom, Breakfast, Wifi</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXXX hotel</td>
-							<td>8000 XXXX Street</td>
-							<td>On it differed repeated wandered required in. Then girl
-								neat why yet knew rose spot. Moreover property we he kindness
-								greatest be oh striking laughter.</td>
-							<td>type1, type2, type3, type4</td>
-							<td>4</td>
-							<td>$400/day</td>
-							<td>Bathroom, Breakfast, Wifi, Gym</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXXXX hotel</td>
-							<td>10000 XXXXX Street</td>
-							<td>In me he at collecting affronting principles apartments.
-								Has visitor law attacks pretend you calling own excited painted.
-								Contented attending smallness it oh ye unwilling.</td>
-							<td>type1, type2, type3, type4, type5</td>
-							<td>5</td>
-							<td>$500/day</td>
-							<td>Bathroom, Breakfast, Wifi, Gym, Pool</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>X hotel</td>
-							<td>2000 X Street</td>
-							<td>Abilities or he perfectly pretended so strangers be
-								exquisite. Oh to another chamber pleased imagine do in. Went me
-								rank at last loud shot an draw.</td>
-							<td>type1</td>
-							<td>1</td>
-							<td>$100/day</td>
-							<td>Bathroom</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XX hotel</td>
-							<td>4000 XX Street</td>
-							<td>Excellent so to no sincerity smallness. Removal request
-								delight if on he we. Unaffected in we by apartments astonished
-								to decisively themselves. Offended ten old consider speaking.</td>
-							<td>type1, type2</td>
-							<td>2</td>
-							<td>$200/day</td>
-							<td>Bathroom, Breakfast</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXX hotel</td>
-							<td>6000 XXX Street</td>
-							<td>Exquisite cordially mr happiness of neglected distrusts.
-								Boisterous impossible unaffected he me everything. Is fine loud
-								deal an rent open give.</td>
-							<td>type1, type2, type3</td>
-							<td>3</td>
-							<td>$300/day</td>
-							<td>Bathroom, Breakfast, Wifi</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXXX hotel</td>
-							<td>8000 XXXX Street</td>
-							<td>On it differed repeated wandered required in. Then girl
-								neat why yet knew rose spot. Moreover property we he kindness
-								greatest be oh striking laughter.</td>
-							<td>type1, type2, type3, type4</td>
-							<td>4</td>
-							<td>$400/day</td>
-							<td>Bathroom, Breakfast, Wifi, Gym</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-						<tr>
-							<td>XXXXX hotel</td>
-							<td>10000 XXXXX Street</td>
-							<td>In me he at collecting affronting principles apartments.
-								Has visitor law attacks pretend you calling own excited painted.
-								Contented attending smallness it oh ye unwilling.</td>
-							<td>type1, type2, type3, type4, type5</td>
-							<td>5</td>
-							<td>$500/day</td>
-							<td>Bathroom, Breakfast, Wifi, Gym, Pool</td>
-							<td><input type="button" value="View & Book"
-								onclick="location.href='View&BookReservations.jsp';"></td>
-						</tr>
-					</table>
-				</center>
-			</div>
+	<div class="main">
+		<div class="extent">
+			<center>
+				<h1>Search Results</h1>
+			</center>
+			<center>
+				<table>
+					<tr>
+						<th align="left">Name</th>
+						<th align="left">Address</th>
+						<th align="left">Description</th>
+						<th align="left">Room type</th>
+						<th align="left">Rank</th>
+						<th align="left">Price/Night</th>
+						<th align="left">Amenities</th>
+						<th align="left"></th>
+					</tr>
+					<tr>
+						<td>X hotel</td>
+						<td>2000 X Street</td>
+						<td>Abilities or he perfectly pretended so strangers be
+							exquisite. Oh to another chamber pleased imagine do in. Went me
+							rank at last loud shot an draw.</td>
+						<td>type1</td>
+						<td>1</td>
+						<td>$100</td>
+						<td>Bathroom</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XX hotel</td>
+						<td>4000 XX Street</td>
+						<td>Excellent so to no sincerity smallness. Removal request
+							delight if on he we. Unaffected in we by apartments astonished to
+							decisively themselves. Offended ten old consider speaking.</td>
+						<td>type1, type2</td>
+						<td>2</td>
+						<td>$200</td>
+						<td>Bathroom, Breakfast</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXX hotel</td>
+						<td>6000 XXX Street</td>
+						<td>Exquisite cordially mr happiness of neglected distrusts.
+							Boisterous impossible unaffected he me everything. Is fine loud
+							deal an rent open give.</td>
+						<td>type1, type2, type3</td>
+						<td>3</td>
+						<td>$300</td>
+						<td>Bathroom, Breakfast, Wifi</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXXX hotel</td>
+						<td>8000 XXXX Street</td>
+						<td>On it differed repeated wandered required in. Then girl
+							neat why yet knew rose spot. Moreover property we he kindness
+							greatest be oh striking laughter.</td>
+						<td>type1, type2, type3, type4</td>
+						<td>4</td>
+						<td>$400</td>
+						<td>Bathroom, Breakfast, Wifi, Gym</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXXXX hotel</td>
+						<td>10000 XXXXX Street</td>
+						<td>In me he at collecting affronting principles apartments.
+							Has visitor law attacks pretend you calling own excited painted.
+							Contented attending smallness it oh ye unwilling.</td>
+						<td>type1, type2, type3, type4, type5</td>
+						<td>5</td>
+						<td>$500</td>
+						<td>Bathroom, Breakfast, Wifi, Gym, Pool</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>X hotel</td>
+						<td>2000 X Street</td>
+						<td>Abilities or he perfectly pretended so strangers be
+							exquisite. Oh to another chamber pleased imagine do in. Went me
+							rank at last loud shot an draw.</td>
+						<td>type1</td>
+						<td>1</td>
+						<td>$100</td>
+						<td>Bathroom</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XX hotel</td>
+						<td>4000 XX Street</td>
+						<td>Excellent so to no sincerity smallness. Removal request
+							delight if on he we. Unaffected in we by apartments astonished to
+							decisively themselves. Offended ten old consider speaking.</td>
+						<td>type1, type2</td>
+						<td>2</td>
+						<td>$200</td>
+						<td>Bathroom, Breakfast</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXX hotel</td>
+						<td>6000 XXX Street</td>
+						<td>Exquisite cordially mr happiness of neglected distrusts.
+							Boisterous impossible unaffected he me everything. Is fine loud
+							deal an rent open give.</td>
+						<td>type1, type2, type3</td>
+						<td>3</td>
+						<td>$300</td>
+						<td>Bathroom, Breakfast, Wifi</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXXX hotel</td>
+						<td>8000 XXXX Street</td>
+						<td>On it differed repeated wandered required in. Then girl
+							neat why yet knew rose spot. Moreover property we he kindness
+							greatest be oh striking laughter.</td>
+						<td>type1, type2, type3, type4</td>
+						<td>4</td>
+						<td>$400</td>
+						<td>Bathroom, Breakfast, Wifi, Gym</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXXXX hotel</td>
+						<td>10000 XXXXX Street</td>
+						<td>In me he at collecting affronting principles apartments.
+							Has visitor law attacks pretend you calling own excited painted.
+							Contented attending smallness it oh ye unwilling.</td>
+						<td>type1, type2, type3, type4, type5</td>
+						<td>5</td>
+						<td>$500</td>
+						<td>Bathroom, Breakfast, Wifi, Gym, Pool</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>X hotel</td>
+						<td>2000 X Street</td>
+						<td>Abilities or he perfectly pretended so strangers be
+							exquisite. Oh to another chamber pleased imagine do in. Went me
+							rank at last loud shot an draw.</td>
+						<td>type1</td>
+						<td>1</td>
+						<td>$100</td>
+						<td>Bathroom</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XX hotel</td>
+						<td>4000 XX Street</td>
+						<td>Excellent so to no sincerity smallness. Removal request
+							delight if on he we. Unaffected in we by apartments astonished to
+							decisively themselves. Offended ten old consider speaking.</td>
+						<td>type1, type2</td>
+						<td>2</td>
+						<td>$200</td>
+						<td>Bathroom, Breakfast</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXX hotel</td>
+						<td>6000 XXX Street</td>
+						<td>Exquisite cordially mr happiness of neglected distrusts.
+							Boisterous impossible unaffected he me everything. Is fine loud
+							deal an rent open give.</td>
+						<td>type1, type2, type3</td>
+						<td>3</td>
+						<td>$300</td>
+						<td>Bathroom, Breakfast, Wifi</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXXX hotel</td>
+						<td>8000 XXXX Street</td>
+						<td>On it differed repeated wandered required in. Then girl
+							neat why yet knew rose spot. Moreover property we he kindness
+							greatest be oh striking laughter.</td>
+						<td>type1, type2, type3, type4</td>
+						<td>4</td>
+						<td>$400</td>
+						<td>Bathroom, Breakfast, Wifi, Gym</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXXXX hotel</td>
+						<td>10000 XXXXX Street</td>
+						<td>In me he at collecting affronting principles apartments.
+							Has visitor law attacks pretend you calling own excited painted.
+							Contented attending smallness it oh ye unwilling.</td>
+						<td>type1, type2, type3, type4, type5</td>
+						<td>5</td>
+						<td>$500</td>
+						<td>Bathroom, Breakfast, Wifi, Gym, Pool</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>X hotel</td>
+						<td>2000 X Street</td>
+						<td>Abilities or he perfectly pretended so strangers be
+							exquisite. Oh to another chamber pleased imagine do in. Went me
+							rank at last loud shot an draw.</td>
+						<td>type1</td>
+						<td>1</td>
+						<td>$100</td>
+						<td>Bathroom</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XX hotel</td>
+						<td>4000 XX Street</td>
+						<td>Excellent so to no sincerity smallness. Removal request
+							delight if on he we. Unaffected in we by apartments astonished to
+							decisively themselves. Offended ten old consider speaking.</td>
+						<td>type1, type2</td>
+						<td>2</td>
+						<td>$200</td>
+						<td>Bathroom, Breakfast</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXX hotel</td>
+						<td>6000 XXX Street</td>
+						<td>Exquisite cordially mr happiness of neglected distrusts.
+							Boisterous impossible unaffected he me everything. Is fine loud
+							deal an rent open give.</td>
+						<td>type1, type2, type3</td>
+						<td>3</td>
+						<td>$300</td>
+						<td>Bathroom, Breakfast, Wifi</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXXX hotel</td>
+						<td>8000 XXXX Street</td>
+						<td>On it differed repeated wandered required in. Then girl
+							neat why yet knew rose spot. Moreover property we he kindness
+							greatest be oh striking laughter.</td>
+						<td>type1, type2, type3, type4</td>
+						<td>4</td>
+						<td>$400</td>
+						<td>Bathroom, Breakfast, Wifi, Gym</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXXXX hotel</td>
+						<td>10000 XXXXX Street</td>
+						<td>In me he at collecting affronting principles apartments.
+							Has visitor law attacks pretend you calling own excited painted.
+							Contented attending smallness it oh ye unwilling.</td>
+						<td>type1, type2, type3, type4, type5</td>
+						<td>5</td>
+						<td>$500</td>
+						<td>Bathroom, Breakfast, Wifi, Gym, Pool</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>X hotel</td>
+						<td>2000 X Street</td>
+						<td>Abilities or he perfectly pretended so strangers be
+							exquisite. Oh to another chamber pleased imagine do in. Went me
+							rank at last loud shot an draw.</td>
+						<td>type1</td>
+						<td>1</td>
+						<td>$100</td>
+						<td>Bathroom</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XX hotel</td>
+						<td>4000 XX Street</td>
+						<td>Excellent so to no sincerity smallness. Removal request
+							delight if on he we. Unaffected in we by apartments astonished to
+							decisively themselves. Offended ten old consider speaking.</td>
+						<td>type1, type2</td>
+						<td>2</td>
+						<td>$200</td>
+						<td>Bathroom, Breakfast</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXX hotel</td>
+						<td>6000 XXX Street</td>
+						<td>Exquisite cordially mr happiness of neglected distrusts.
+							Boisterous impossible unaffected he me everything. Is fine loud
+							deal an rent open give.</td>
+						<td>type1, type2, type3</td>
+						<td>3</td>
+						<td>$300</td>
+						<td>Bathroom, Breakfast, Wifi</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXXX hotel</td>
+						<td>8000 XXXX Street</td>
+						<td>On it differed repeated wandered required in. Then girl
+							neat why yet knew rose spot. Moreover property we he kindness
+							greatest be oh striking laughter.</td>
+						<td>type1, type2, type3, type4</td>
+						<td>4</td>
+						<td>$400</td>
+						<td>Bathroom, Breakfast, Wifi, Gym</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+					<tr>
+						<td>XXXXX hotel</td>
+						<td>10000 XXXXX Street</td>
+						<td>In me he at collecting affronting principles apartments.
+							Has visitor law attacks pretend you calling own excited painted.
+							Contented attending smallness it oh ye unwilling.</td>
+						<td>type1, type2, type3, type4, type5</td>
+						<td>5</td>
+						<td>$500</td>
+						<td>Bathroom, Breakfast, Wifi, Gym, Pool</td>
+						<td><input type="button" value="View & Book"
+							onclick="location.href='View&BookReservations.jsp';"></td>
+					</tr>
+				</table>
+			</center>
 		</div>
-	</form>
+	</div>
 	<center>
 		<div class="footer"></div>
 	</center>
